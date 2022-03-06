@@ -4,54 +4,57 @@
       <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Document</title>
+     <link rel="stylesheet" href="form-2022.css">
+     <title>sports</title>
     </head>
     <body>
         <main class="main">
 
-            <h1 id="title">sport in a perfect way</h1>
-            <p id="description"><em><strong> information about your self</strong></em></p>
-
+          <h1 id="title">sport in a perfect way</h1>
+           <p id="description"><em><strong> information about your self</strong></em></p>
 
             <form id="survey-form">
-                <label for="name">name</label>
-                <input id="name" type="name" name="name" required placeholder="enter your name"> 
-                <br>
-                       
-                <label for="email">email</label>
-                <input id="email" type="email" name="email" required placeholder="enter your email">
-                <br>
-    
-                <label for="number">number</label>
-                <input id="number" type="number" name="number"  min="1" max="10" required placeholder="enter your rate">
-                <br>
-
-
-                <select id="dropdown" name="sport">
-                    <option value="spain">football</option>
-                    <option value="US">tennis</option>
-                    <option value="italy">voleball</option>
-                    <option value="brazil">basketball</option>
-                </select>
-
-                
-                <br>
-                <input type="radio" name="sport" value="male">mal<br>
-                <input type="radio" name="sport" value="famel">famel<br>
-                <input type="radio" name="sport" value="other">other</br>
-
-                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                <label for="vehicle1"> I have a bike</label><br>
-                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                <label for="vehicle2"> I have a car</label><br>
-                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                <label for="vehicle3"> I have a boat</label><br>
-
-
-                <input type="textarea" placeholder="additional comments">
-                <input type="submit" id="submit">
-                
-
+                <div>
+                    <label for="name" id="name-label" >name</label>
+                    <input name="name" id="name" type="text" required placeholder="enter your name"> 
+                    <br> 
+                    <label for="email" id="email-label" >email</label>
+                    <input  type="email" id="email" name="email" required placeholder="enter your email"><br>
+                    <label for="number" id="number-label" >number</label>
+                    <input type="number" id="number" name="number"  min="1" max="10" required placeholder="enter your rate">
+                </div>
+                <div>
+                    <p>What is your favorite game?</p>
+                    <select id="dropdown" name="sport">
+                        <option value="football">Football</option>
+                        <option value="tennis">Tennis</option>
+                        <option value="voleball">Voleball</option>
+                        <option value="basketball">Basketball</option>
+                    </select>
+                </div>
+                <div>
+                    <p>What is your gender?</p>
+                    <input type="radio" name="sport" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" name="sport" value="famel">
+                    <label for="famel">Famel</label><br>
+                    <input type="radio" name="sport" value="other">
+                    <label for="other">Other</label></br>
+                </div>
+                <div>
+                    <p>By what you normally travel?</p>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1">Aerpolane</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2">Car</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3">Boat</label><br>
+                </div>
+                <div>
+                    <p></p>
+                    <textarea name="textarea" id="" cols="30" rows="10" placeholder="additional comments"></textarea>
+                    <input type="submit" id="submit">
+                </div>
             </form>
         </main>
 
